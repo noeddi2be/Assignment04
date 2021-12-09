@@ -20,6 +20,8 @@ public static void main(String[] args) {
     		userIn = scan.nextInt();
     	}
  
+    scan.close();
+
     System.out.println("You entered: " + userIn);
 
     // Increment
@@ -76,6 +78,12 @@ public static void main(String[] args) {
        	
     // Array Array List Multidimensional Array
     String[] mySpecialAnimal = new String[9];
+
+    int x = 0;
+    int n = 8;
+    for (int i = 0; i <= n; i++) {
+        mySpecialAnimal[x] = ;
+    }
 
 	
     // Boolean

@@ -13,7 +13,7 @@ public class colourMixer {
 	}
 	
 	// gets Colours
-	public Colour getColour (){
+	public Colour getColour() {
 		return colour;
 	}
 }
