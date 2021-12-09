@@ -22,14 +22,33 @@ public static void main(String[] args) {
  
     scan.close();
 
-    System.out.println("You entered: " + userIn);
 
     // Increment
     userIn++;
 
+    // Blackjack-Style //Random 
+    Random num1 = new Random();
+    final int MAX = 18;
+    int count = 0;
+    int calc1 = 0;
+   
+    for (; userIn < MAX && count < 3; count++) {
+
+        calc1 = num1.nextInt(9)+1;
+        userIn += calc1;
+    } 
+
+    // Roulette-style red black	    
+
+    userIn = (int) Math.pow(userIn, 2);
     
+    
+    while (userIn % 2 == 0) {
+        userIn = userIn / 2;   
+    }
 
-
+    
+   
     // Objects Method Overloading This Reference (Setters and Getters)
     // Static Variables / Methods / (Privat Method)
     // Encapsulation
@@ -39,69 +58,37 @@ public static void main(String[] args) {
     // Math Random Wrapper Class Data Conversion
 
 
-    // Blackjack-Style //Random 
-    Random num1 = new Random();
-    final int MAX = 18;
-    int count = 0;
-    int calc1 = 0;
     
-    for (; userIn < MAX && count < 3; count++) {
-
-    	calc1 = num1.nextInt(9)+1;
-    	userIn += calc1;
-    		
-    	System.out.println("Intents: " + (count+1) + "\trandom no: " + calc1 + "\ttotal: " + userIn);	//Test
-    
-    	if (userIn > MAX) {
-
-    		System.out.println("you went overboard: " + userIn);										//Test - Idee noch ausbauen
-    	}
-    }
     	
-    // Roulette-style red black	    
-    int black = 0;
-    int red = 1;
-    userIn = (int) Math.pow(userIn, 4);
     
-    do {
-    	userIn = userIn / calc1;
-    	System.out.println("do loop userIn: " + userIn + "\trandom no: " + calc1);						//Test
-    } while ((userIn != 0) && (userIn != 1) && (calc1 != 1));												//Idee noch ausbauen
-    	
-    System.out.println("final number:" + userIn);  
-
     
-	//int calc2 = num2.nextInt(2);
-	
-       	
-       	
-       	
     // Array Array List Multidimensional Array
-    String[] mySpecialAnimal = new String[9];
+    String[] mySpecialAnimal =  new String[5];
+    mySpecialAnimal[0] = "Bird";
+    mySpecialAnimal[1] = "Camel";
+    mySpecialAnimal[2] = "Bear";
+    mySpecialAnimal[3] = "Frog";
+    mySpecialAnimal[4] = "Lion";
 
-    int x = 0;
-    int n = 8;
-    for (int i = 0; i <= n; i++) {
-        mySpecialAnimal[x] = ;
-    }
+    userIn = userIn % 5;
+    
+
+    String myAnimal = mySpecialAnimal[userIn];
+
+    System.out.println(myAnimal);
 
 	
     // Boolean
 
-    Boolean test;
-
 
        	
                	
-    // Conditionals and Loops
         // Break, Continue Statements
         // Switch,
 
        	
-    // Comparing Values
     
 
-    // Enum 
 
 
 
