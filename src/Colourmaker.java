@@ -7,7 +7,7 @@ public class Colourmaker {
 	}
 	
 
-	//sets Colours
+	//sets Colours without creating an object of the class
 	public static Colour chooseColour() {
 		Random ran = new Random();
 		int set = ran.nextInt(6)+1;

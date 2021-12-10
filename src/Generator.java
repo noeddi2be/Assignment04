@@ -43,7 +43,7 @@ public class Generator{
     }
 
     
-    // Array Array List Multidimensional Array
+    // Array 
     String[] mySpecialAnimal =  new String[5];
     mySpecialAnimal[0] = "Bird";
     mySpecialAnimal[1] = "Camel";

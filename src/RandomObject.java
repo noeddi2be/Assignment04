@@ -8,6 +8,7 @@ public class RandomObject implements ColourShuffle {
     private Colourmaker.Colour randomColour;
     private Colourmaker.Colour newColour;
 
+    // implementation from interface
     public void shuffle() {
 		Random ran2 = new Random();
 		int set = ran2.nextInt(6)+1;
