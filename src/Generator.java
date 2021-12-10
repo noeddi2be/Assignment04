@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import	java.util.Random;
+import java.util.Random;
 
 public class Generator{
 
@@ -68,13 +68,15 @@ public class Generator{
     System.out.println("My random object comes in the form of a: " + myObject.getRandomAnimal());
     System.out.println("My random object has the colour: " + myObject.getRandomColour());
     System.out.println("Do you like the colour of the object? (Enter 'yes' or 'no'.)");
+
+    Colourmaker.Colour newColour = Colourmaker.Colour.GREEN;
     String answer = scan.next();
     switch (answer) {
         case "yes":
             System.out.println("Good for you");
             break;
         case "no":
-            System.out.println("Your new colour is: " /*+ myObject.getRandomColour().shuffle()*/);
+            System.out.println("Your new colour is: " + newColour);
             break;
         default:
             System.out.println("Please enter a valid answer!");
