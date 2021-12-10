@@ -17,13 +17,11 @@ public class Generator{
     		System.out.println("Please enter a number between 0 to 8 only!");
     		userIn = scan.nextInt();
     	}
-
-    scan.close();
  
     // Increment
     userIn++;
 
-    // Random 
+   // Random 
     Random num1 = new Random();
     final int MAX = 18;
     int count = 0;
@@ -72,8 +70,7 @@ public class Generator{
     System.out.println("Do you like the colour of the object? (Enter 'yes' or 'no'.)");
 
     Colourmaker.Colour newColour;
-    Scanner scan2 = new Scanner(System.in);
-    String answer = scan2.next();
+    String answer = scan.next();
     switch (answer) {
         case "yes":
             System.out.println("Good for you");
@@ -87,7 +84,8 @@ public class Generator{
             System.out.println("Please enter a valid answer!");
         }
 
-    scan2.close(); 
+    scan.close();
+    
     }
 
 }
