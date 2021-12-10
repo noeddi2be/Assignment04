@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Colourmaker implements ColourShuffle{
+public class Colourmaker implements ColourShuffle {
 
 	public enum Colour {
 		BLUE, YELLOW, RED, LILA, GREEN, ORANGE

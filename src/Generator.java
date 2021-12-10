@@ -78,61 +78,14 @@ public class Generator {
             System.out.println("Good for you");
             break;
         case "no":
-            System.out.println("Your new colour is: " /*+ myObject.getRandomColour().shuffle()*/);
+            System.out.println("Your new colour is: " /* + myObject.getRandomColour().shuffle()*/);
             break;
         default:
             System.out.println("Please enter a valid answer!");
         }
 
-
+    scan2.close();
     }
-
-    
-    
-
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // Boolean
-
-
-       	
-               	
-        // Break, Continue Statements
-        // Switch,
-
-       	
-        // Objects Method Overloading This Reference (Setters and Getters)
-    // Static Variables / Methods / (Privat Method)
-    // Encapsulation
-
-    
-    
-    // Math Random Wrapper Class Data Conversion
-
-
-
-
-
-
-
-
 }
 
 
