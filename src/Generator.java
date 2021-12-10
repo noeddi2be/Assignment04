@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import	java.util.Random;
 
-public class Generator {
+public class Generator{
 
 
 
@@ -18,9 +18,6 @@ public class Generator {
     		userIn = scan.nextInt();
     	}
  
-    scan.close();
-
-
     // Increment
     userIn++;
 
@@ -65,29 +62,26 @@ public class Generator {
     myObject.setRandomUnevenNumber(userIn);  
     myObject.setRandomColour(createColour);
     myObject.setRandomAnimal(myAnimal);
-    
+        
 
     System.out.println("My random object has the number: " + myObject.getRandomEvenNumber());
     System.out.println("My random object comes in the form of a: " + myObject.getRandomAnimal());
     System.out.println("My random object has the colour: " + myObject.getRandomColour());
-    Scanner scan2 = new Scanner(System.in);
-    System.out.println("Do you like the colour of the object? (Enter 'yes' or 'no'");
-    String answer = scan2.nextLine();
+    System.out.println("Do you like the colour of the object? (Enter 'yes' or 'no'.)");
+    String answer = scan.next();
     switch (answer) {
         case "yes":
             System.out.println("Good for you");
             break;
         case "no":
-            System.out.println("Your new colour is: " /* + myObject.getRandomColour().shuffle()*/);
+            System.out.println("Your new colour is: " /*+ myObject.getRandomColour().shuffle()*/);
             break;
         default:
             System.out.println("Please enter a valid answer!");
         }
 
-    scan2.close();
-
+    scan.close();
+    
     }
+
 }
-
-
-
