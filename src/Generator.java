@@ -69,13 +69,15 @@ public class Generator{
     System.out.println("My random object has the colour: " + myObject.getRandomColour());
     System.out.println("Do you like the colour of the object? (Enter 'yes' or 'no'.)");
 
-    Colourmaker.Colour newColour = Colourmaker.Colour.GREEN;
+    Colourmaker.Colour newColour;
     String answer = scan.next();
     switch (answer) {
         case "yes":
             System.out.println("Good for you");
             break;
-        case "no":
+        case "no": 
+            myObject.shuffle();
+            newColour = myObject.getnewColour();
             System.out.println("Your new colour is: " + newColour);
             break;
         default:

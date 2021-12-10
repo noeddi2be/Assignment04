@@ -1,5 +1,5 @@
 public interface ColourShuffle {
     
-    Colourmaker.Colour shuffle();
+    void shuffle();
 
 }

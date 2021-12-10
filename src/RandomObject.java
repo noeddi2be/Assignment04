@@ -6,8 +6,9 @@ public class RandomObject implements ColourShuffle {
     private int randomUnevenNumber;
     private String randomAnimal;
     private Colourmaker.Colour randomColour;
+    private Colourmaker.Colour newColour;
 
-    public Colourmaker.Colour shuffle() {
+    public void shuffle() {
 		Random ran2 = new Random();
 		int set = ran2.nextInt(6)+1;
 		Colourmaker.Colour colour1 = Colourmaker.Colour.BLUE;
@@ -32,7 +33,11 @@ public class RandomObject implements ColourShuffle {
 			finColour = colour6;
 		}
 
-		return finColour;
+		this.newColour = finColour;
+    }
+
+    public Colourmaker.Colour getnewColour() {
+        return newColour;
     }
 
     public void setRandomUnevenNumber(int number) {
